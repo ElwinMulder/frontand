@@ -1,0 +1,223 @@
+/* Reset en basisopmaak */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #FFFFFF;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #FDBA74, #3B82F6);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  header .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigatie */
+  nav {
+    background: #7C3AED;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  nav .hamburger-toggle {
+    font-size: 24px;
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+  }
+  
+  /* Hamburger menu op mobiel */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #2c3e50;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    nav .hamburger-toggle {
+      display: block;
+    }
+  }
+  
+  /* Main content */
+  main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-top: 2rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(to right, #FDBA74, #3B82F6);
+    color: #000000;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  
+  footer a {
+    color: #1a1dbc;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Donkere modus knop */
+#darkModeToggle {
+    margin-top: 1rem;
+    background: white;
+    color: #2c3e50;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #darkModeToggle:hover {
+    background: #ecf0f1;
+  }
+  
+  /* Donkere modus styling */
+  body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode header {
+    background: linear-gradient(to right, #000000, #434343);
+  }
+  
+  body.dark-mode nav {
+    background: #1e1e1e;
+  }
+  
+  body.dark-mode nav ul li a {
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  body.dark-mode main {
+    background: #1e1e1e;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode footer {
+    background: #000000;
+  }
+  
+  body.dark-mode #darkModeToggle {
+    background: #333;
+    color: #fff;
+  }
+  .opleiding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+  }
+  
+  body.dark-mode .opleiding {
+    background: #1f1f1f;
+    color: #e0e0e0;
+  }
+  
+  .opleiding .info {
+    max-width: 70%;
+  }
+  
+  .opleiding .jaar {
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  body.dark-mode .opleiding .jaar {
+    color: #1abc9c;
+  }
+  .ervaring {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: white;
+    border-color: #FACC15;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+  }
+  
+  body.dark-mode .ervaring {
+    background: #1f1f1f;
+    color: #e0e0e0;
+  }
+  
+  .ervaring .info {
+    max-width: 70%;
+  }
+  
+  .ervaring .jaar {
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  body.dark-mode .ervaring .jaar {
+    color: #1abc9c;
+  }
+  
