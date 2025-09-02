@@ -115,6 +115,7 @@
   /* Donkere modus knop */
 #darkModeToggle {
     margin-top: 1rem;
+    text-decoration: white;
     background: white;
     color: #2c3e50;
     padding: 0.5rem 1rem;
