@@ -97,14 +97,14 @@
   /* Footer */
   footer {
     background: linear-gradient(to right, #FDBA74, #3B82F6);
-    color: white;
+    color: #000000;
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
   }
   
   footer a {
-    color: #1a1dbc;
+    color: white;
     text-decoration: none;
   }
   
